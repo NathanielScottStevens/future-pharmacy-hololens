@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311924, g: 0.38073993, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731195, g: 0.38074014, b: 0.35872737, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -764,6 +764,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013027790266, guid: d41fa7615c3c85b40bcc95fc4367b607,
+        type: 2}
+      propertyPath: MeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010427123524, guid: d41fa7615c3c85b40bcc95fc4367b607, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d41fa7615c3c85b40bcc95fc4367b607, type: 2}
   m_IsPrefabParent: 0
@@ -855,8 +864,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1182491668}
   m_LocalRotation: {x: -0.0032047697, y: 0.99998975, z: 0.003204767, w: 0.00001057904}
-  m_LocalPosition: {x: 0, y: 0, z: -4.8100004}
-  m_LocalScale: {x: 0.00049999997, y: 0.00049999997, z: 0.00049999997}
+  m_LocalPosition: {x: 0, y: 0, z: -1.37}
+  m_LocalScale: {x: 0.00024999998, y: 0.00024999998, z: 0.00024999998}
   m_Children:
   - {fileID: 367062150}
   m_Father: {fileID: 0}
@@ -890,7 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a97839af974bf4b9b084c200bf24d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceFromUser: 2
+  distanceFromUser: 1
 --- !u!1 &1187791207
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,12 +1001,21 @@ Prefab:
         type: 2}
       propertyPath: RoomModel
       value: 
-      objectReference: {fileID: 100006, guid: 30a994e5e871a4147b594c623df249c0, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114000011154029958, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
         type: 2}
       propertyPath: surfaceMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 474f0e0481d4aa14e92a5ada98042f3a, type: 2}
+    - target: {fileID: 1000010302963436, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011154029958, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
+        type: 2}
+      propertyPath: drawVisualMeshes
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
   m_IsPrefabParent: 0
