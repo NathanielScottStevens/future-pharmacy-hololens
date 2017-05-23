@@ -13,7 +13,7 @@ public class Line : MonoBehaviour
     {
         line = GetComponent<LineRenderer>();
         t = start;
-        line.numPositions = 2;
+        line.positionCount = 2;
     }
 
     private void Update()

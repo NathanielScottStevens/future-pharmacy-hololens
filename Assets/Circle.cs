@@ -33,7 +33,7 @@ public class Circle : MonoBehaviour
             positions[i] = new Vector3(x, y);
         }
 
-        line.numPositions = segments + 1;
+        line.positionCount = segments + 1;
         line.SetPositions(positions);
         line.startWidth = curve.Evaluate(t) * 0.5f;
         line.endWidth = curve.Evaluate(t) * 0.5f;
