@@ -1,11 +1,16 @@
 fileFormatVersion: 2
-guid: d44c8230029006c4a8f77ca24eec3093
-timeCreated: 1496022029
+guid: 1e951a282291b284bb442b71fe38f0d9
+timeCreated: 1496886345
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Name_Minimized
-    21300002: Name_Maximized
+    21300002: Adherance_Minimized
+    21300004: Biometrics_Minimized
+    21300006: PGX_Minimized
+    21300008: Name_Maximized
+    21300010: Adherance_Maximized
+    21300012: Biometrics_Maximized
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -100,9 +105,48 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 196
+        y: 363
         width: 337
         height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Adherance_Minimized
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 303
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Biometrics_Minimized
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 303
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PGX_Minimized
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 303
+        width: 121
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,10 +156,36 @@ TextureImporter:
       name: Name_Maximized
       rect:
         serializedVersion: 2
-        x: 2
-        y: 114
-        width: 336
+        x: 0
+        y: 283
+        width: 337
         height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Adherance_Maximized
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 241
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Biometrics_Maximized
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 241
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
