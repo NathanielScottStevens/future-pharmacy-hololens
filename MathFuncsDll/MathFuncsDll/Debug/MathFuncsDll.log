@@ -1,0 +1,10 @@
+﻿  MathLibrary.cpp
+f:\visualstudioprojects\mathfuncsdll\mathfuncsdll\mathlibrary.cpp(10): warning C4273: 'MathLibrary::Functions::Add': inconsistent dll linkage
+  f:\visualstudioprojects\mathfuncsdll\mathfuncsdll\mathlibrary.h(17): note: see previous definition of 'Add'
+f:\visualstudioprojects\mathfuncsdll\mathfuncsdll\mathlibrary.cpp(15): warning C4273: 'MathLibrary::Functions::Multiply': inconsistent dll linkage
+  f:\visualstudioprojects\mathfuncsdll\mathfuncsdll\mathlibrary.h(20): note: see previous definition of 'Multiply'
+f:\visualstudioprojects\mathfuncsdll\mathfuncsdll\mathlibrary.cpp(20): warning C4273: 'MathLibrary::Functions::AddMultiply': inconsistent dll linkage
+  f:\visualstudioprojects\mathfuncsdll\mathfuncsdll\mathlibrary.h(23): note: see previous definition of 'AddMultiply'
+     Creating library F:\VisualStudioProjects\MathFuncsDll\Debug\MathFuncsDll.lib and object F:\VisualStudioProjects\MathFuncsDll\Debug\MathFuncsDll.exp
+  MathFuncsDll.vcxproj -> F:\VisualStudioProjects\MathFuncsDll\Debug\MathFuncsDll.dll
+  MathFuncsDll.vcxproj -> F:\VisualStudioProjects\MathFuncsDll\Debug\MathFuncsDll.pdb (Full PDB)
