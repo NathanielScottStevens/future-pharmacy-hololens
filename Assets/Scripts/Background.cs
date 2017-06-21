@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+[ExecuteInEditMode]
 public class Background : MonoBehaviour 
 {
-    public int size = 128;
+    // We need to use int to work with the raw image data.  
+    // However, a property of type int cannot be animated.
+    // Hence, the awkward conversions.
+    public float size = 128;
     public Color color;
-    public int radius = 10;
-    public int borderRadius = 5;
+    public float radius = 10;
+    public float borderRadius = 5;
 
     RawImage image;
 
@@ -16,9 +20,9 @@ public class Background : MonoBehaviour
     }
 
     private void Update()
-    {       
-        Texture2D texture = new Texture2D(size, size);
-        Color[] colors = new Color[size * size];
+    {
+        Texture2D texture = new Texture2D((int)size, (int)size);
+        Color[] colors = new Color[(int)size * (int)size];
         
         for (int x = 0; x < size; x++)
         {
@@ -33,7 +37,7 @@ public class Background : MonoBehaviour
                     size / 2
                 );
 
-                if (IsInsideCircle(x, y, center, radius))
+                if (IsInsideCircle(x, y, center, (int)radius))
                 {
                     colors[CoordToIndex(x, y)] = color;
                 }
@@ -93,7 +97,7 @@ public class Background : MonoBehaviour
 
     void ClearPixelsOutsideCorners(Color[] colors, int x, int y, Vector2 center)
     {
-        if (!IsInsideCircle(x, y, center, borderRadius))
+        if (!IsInsideCircle(x, y, center, (int)borderRadius))
         {
             colors[CoordToIndex(x, y)] = Color.clear;
         }
@@ -108,7 +112,7 @@ public class Background : MonoBehaviour
 
     int CoordToIndex(int x, int y)
     {
-        return y*size + x;
+        return y*(int)size + x;
     }
 
 }
